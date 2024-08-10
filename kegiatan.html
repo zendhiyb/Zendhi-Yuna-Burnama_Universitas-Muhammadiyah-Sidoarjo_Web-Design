@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Kegiatan</title>
     <!-- Bootsrap 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- Font Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-
     <!-- Animasi AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
-</head>
-<body class="bg-light">
-
+  </head>
+  <body class="bg-light">
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-0 border-0 shadow border-bottom border-danger border-5">
           <div class="modal-body p-5">
             <div class="">
-              <h4 class="text-sub mb-3">
-                Kotak Saran
-              </h4>
+              <h4 class="text-sub mb-3"> Kotak Saran </h4>
             </div>
             <hr class="border">
             <form>
@@ -68,7 +59,6 @@
         </div>
       </div>
     </div>
-
     <nav class="navbar navbar-expand-lg bg-white fixed-top py-2 shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -80,297 +70,318 @@
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <!-- <div class="vr mt-2" style="height: 25px;"></div>
-            <a class="nav-link fw-medium text-secondary ms-2 me-1" href="#"><i class="fa-solid fa-globe"></i></a>
-            <a class="nav-link fw-medium text-secondary me-2" href="#"><i class="fa-solid fa-question"></i></a> -->
-            <button class="fw-medium ms-2 p-2 rounded-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-box-open me-2"></i> Kotak Pesan</button>
-            <button class="fw-medium ms-2 p-2 rounded-2 px-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="fw-medium ms-2 p-2 rounded-2 px-3 btn btn-outline-danger border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-list"></i></button>
+            <button class="fw-medium ms-2 p-2 rounded-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-box-open me-2"></i> Kotak Pesan </button>
+            <button class="fw-medium ms-2 p-2 rounded-2 px-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="fw-medium ms-2 p-2 rounded-2 px-3 btn btn-outline-danger border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-list"></i>
+            </button>
           </div>
         </div>
       </div>
     </nav>
-
-    
-
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="clearfix">
-        <a class="float-start p-4 fw-bold text-danger" href="index.html" style="text-decoration: none;"><i class="fa-solid fa-chevron-left me-2"></i>dashboard</a>
-        <a class="float-end p-4 text-danger fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" href="" style="text-decoration: none;">Kembali <i class="ms-2 fa-solid fa-chevron-right"></i></a>
+        <a class="float-start p-4 fw-bold text-danger" href="index.html" style="text-decoration: none;">
+          <i class="fa-solid fa-chevron-left me-2"></i>dashboard </a>
+        <a class="float-end p-4 text-danger fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" href="" style="text-decoration: none;">Kembali <i class="ms-2 fa-solid fa-chevron-right"></i>
+        </a>
       </div>
-        <div class="offcanvas-body m-0 p-0 bg-light">
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="kegiatan.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-calendar fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Kegiatan</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="struktural.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar2" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-people-group fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Struktural</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="program-kerja.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar3" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-clipboard fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Program Kerja</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="kementrian.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar4" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-users-viewfinder fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Kementerian</p>
-                </div>
-            </a>
-          </div>              
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="artikel.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar5" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-newspaper fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Artikel</p>
-                </div>
-            </a>
-          </div>              
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="gallery.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar6" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-image fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Gallery</p>
-                </div>
-            </a>
-          </div>              
+      <div class="offcanvas-body m-0 p-0 bg-light">
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="kegiatan.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-calendar fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Kegiatan</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="struktural.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar2" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-people-group fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Struktural</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="program-kerja.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar3" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-clipboard fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Program Kerja</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="kementrian.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar4" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-users-viewfinder fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Kementerian</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="artikel.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar5" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-newspaper fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Artikel</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="gallery.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar6" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-image fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Gallery</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 bg-transparent">
           <div class="position-absolute top-100 start-50 translate-middle mt-5">
-            <a href="" class="bg-danger p-3 text-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark px-1"></i></a>
+            <a href="" class="bg-danger p-3 text-white rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark px-1"></i>
+            </a>
           </div>
           <div class="modal-body m-0 text-center">
             <div class="input-group mb-3">
-              <span class="input-group-text bg-danger text-white rounded-left p-3" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span class="input-group-text bg-danger text-white rounded-left p-3" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
               <input type="text" class="form-control rounded-right border-0 bg-light p-3 px-4 d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none" placeholder="Masukkan kata kunci..." aria-describedby="basic-addon1">
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    
     <div class="" style="margin-top: 75px;">
-        <div class="">
-            <div class="img-kegiatan">
-              <div class="content-kegiatan" >
-                <div class="text-start">
-                  <div class="container">
-                    <div class="text">
-                        <h1 class="text-white border-kegiatan judul-kegiatan" data-aos="fade-right" data-aos-duration="1200">Kegiatan</h1>
-                        <p class="text-white fs-5" data-aos="fade-right" data-aos-duration="1400">Menampilkan acara BEM ITBA DCC, seperti seminar, workshop, kompetisi, dan kegiatan sosial yang meningkatkan partisipasi mahasiswa.</p>
-                      </div>
-                  </div>
+      <div class="">
+        <div class="img-kegiatan">
+          <div class="content-kegiatan">
+            <div class="text-start">
+              <div class="container">
+                <div class="text">
+                  <h1 class="text-white border-kegiatan judul-kegiatan" data-aos="fade-right" data-aos-duration="1200">Kegiatan</h1>
+                  <p class="text-white fs-5" data-aos="fade-right" data-aos-duration="1400">Menampilkan acara BEM ITBA DCC, seperti seminar, workshop, kompetisi, dan kegiatan sosial yang meningkatkan partisipasi mahasiswa.</p>
                 </div>
               </div>
             </div>
-            <div class="py-3 bg-danger"></div>
-            <div class="" style="margin-top: -30px;">
-              <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L120,10C240,20,480,40,720,40C960,40,1200,20,1440,16.7C1680,13,1920,27,2160,40C2400,53,2640,67,2880,60C3120,53,3360,27,3600,13.3C3840,0,4080,0,4320,6.7C4560,13,4800,27,5040,38.3C5280,50,5520,60,5760,53.3C6000,47,6240,23,6480,16.7C6720,10,6960,20,7200,28.3C7440,37,7680,43,7920,48.3C8160,53,8400,57,8640,63.3C8880,70,9120,80,9360,73.3C9600,67,9840,43,10080,31.7C10320,20,10560,20,10800,16.7C11040,13,11280,7,11520,3.3C11760,0,12000,0,12240,1.7C12480,3,12720,7,12960,11.7C13200,17,13440,23,13680,30C13920,37,14160,43,14400,51.7C14640,60,14880,70,15120,75C15360,80,15600,80,15840,70C16080,60,16320,40,16560,38.3C16800,37,17040,53,17160,61.7L17280,70L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop><stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,10L120,11.7C240,13,480,17,720,15C960,13,1200,7,1440,5C1680,3,1920,7,2160,15C2400,23,2640,37,2880,46.7C3120,57,3360,63,3600,55C3840,47,4080,23,4320,25C4560,27,4800,53,5040,68.3C5280,83,5520,87,5760,85C6000,83,6240,77,6480,75C6720,73,6960,77,7200,65C7440,53,7680,27,7920,26.7C8160,27,8400,53,8640,58.3C8880,63,9120,47,9360,45C9600,43,9840,57,10080,66.7C10320,77,10560,83,10800,71.7C11040,60,11280,30,11520,25C11760,20,12000,40,12240,51.7C12480,63,12720,67,12960,56.7C13200,47,13440,23,13680,23.3C13920,23,14160,47,14400,56.7C14640,67,14880,63,15120,60C15360,57,15600,53,15840,55C16080,57,16320,63,16560,70C16800,77,17040,83,17160,86.7L17280,90L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,60L120,56.7C240,53,480,47,720,38.3C960,30,1200,20,1440,26.7C1680,33,1920,57,2160,68.3C2400,80,2640,80,2880,66.7C3120,53,3360,27,3600,28.3C3840,30,4080,60,4320,71.7C4560,83,4800,77,5040,71.7C5280,67,5520,63,5760,53.3C6000,43,6240,27,6480,20C6720,13,6960,17,7200,20C7440,23,7680,27,7920,23.3C8160,20,8400,10,8640,13.3C8880,17,9120,33,9360,45C9600,57,9840,63,10080,70C10320,77,10560,83,10800,85C11040,87,11280,83,11520,73.3C11760,63,12000,47,12240,43.3C12480,40,12720,50,12960,60C13200,70,13440,80,13680,80C13920,80,14160,70,14400,61.7C14640,53,14880,47,15120,36.7C15360,27,15600,13,15840,6.7C16080,0,16320,0,16560,5C16800,10,17040,20,17160,25L17280,30L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path></svg>
-            </div>
           </div>
-
-          <div class="container bg-white mb-5">
-            <div class="py-5 px-3">
+        </div>
+        <div class="py-3 bg-danger"></div>
+        <div class="" style="margin-top: -30px;">
+          <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L120,10C240,20,480,40,720,40C960,40,1200,20,1440,16.7C1680,13,1920,27,2160,40C2400,53,2640,67,2880,60C3120,53,3360,27,3600,13.3C3840,0,4080,0,4320,6.7C4560,13,4800,27,5040,38.3C5280,50,5520,60,5760,53.3C6000,47,6240,23,6480,16.7C6720,10,6960,20,7200,28.3C7440,37,7680,43,7920,48.3C8160,53,8400,57,8640,63.3C8880,70,9120,80,9360,73.3C9600,67,9840,43,10080,31.7C10320,20,10560,20,10800,16.7C11040,13,11280,7,11520,3.3C11760,0,12000,0,12240,1.7C12480,3,12720,7,12960,11.7C13200,17,13440,23,13680,30C13920,37,14160,43,14400,51.7C14640,60,14880,70,15120,75C15360,80,15600,80,15840,70C16080,60,16320,40,16560,38.3C16800,37,17040,53,17160,61.7L17280,70L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path>
+            <defs>
+              <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,10L120,11.7C240,13,480,17,720,15C960,13,1200,7,1440,5C1680,3,1920,7,2160,15C2400,23,2640,37,2880,46.7C3120,57,3360,63,3600,55C3840,47,4080,23,4320,25C4560,27,4800,53,5040,68.3C5280,83,5520,87,5760,85C6000,83,6240,77,6480,75C6720,73,6960,77,7200,65C7440,53,7680,27,7920,26.7C8160,27,8400,53,8640,58.3C8880,63,9120,47,9360,45C9600,43,9840,57,10080,66.7C10320,77,10560,83,10800,71.7C11040,60,11280,30,11520,25C11760,20,12000,40,12240,51.7C12480,63,12720,67,12960,56.7C13200,47,13440,23,13680,23.3C13920,23,14160,47,14400,56.7C14640,67,14880,63,15120,60C15360,57,15600,53,15840,55C16080,57,16320,63,16560,70C16800,77,17040,83,17160,86.7L17280,90L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path>
+            <defs>
+              <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,60L120,56.7C240,53,480,47,720,38.3C960,30,1200,20,1440,26.7C1680,33,1920,57,2160,68.3C2400,80,2640,80,2880,66.7C3120,53,3360,27,3600,28.3C3840,30,4080,60,4320,71.7C4560,83,4800,77,5040,71.7C5280,67,5520,63,5760,53.3C6000,43,6240,27,6480,20C6720,13,6960,17,7200,20C7440,23,7680,27,7920,23.3C8160,20,8400,10,8640,13.3C8880,17,9120,33,9360,45C9600,57,9840,63,10080,70C10320,77,10560,83,10800,85C11040,87,11280,83,11520,73.3C11760,63,12000,47,12240,43.3C12480,40,12720,50,12960,60C13200,70,13440,80,13680,80C13920,80,14160,70,14400,61.7C14640,53,14880,47,15120,36.7C15360,27,15600,13,15840,6.7C16080,0,16320,0,16560,5C16800,10,17040,20,17160,25L17280,30L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="container bg-white mb-5">
+        <div class="py-5 px-3">
+          <div class="row">
+            <div class="col-md-9">
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-light rounded-3 py-3 mb-3 px-3">
+                <ol class="breadcrumb m-0 fw-bold">
+                  <li class="breadcrumb-item">
+                    <a href="#" class="text-dark" style="text-decoration: none;">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">Kegiatan</li>
+                </ol>
+              </nav>
               <div class="row">
-                <div class="col-md-9">
-                  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-light rounded-3 py-3 mb-3 px-3">
-                    <ol class="breadcrumb m-0 fw-bold">
-                      <li class="breadcrumb-item" ><a href="#" class="text-dark" style="text-decoration: none;">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Kegiatan</li>
-                    </ol>
-                  </nav>
-                  <div class="row">
-                    <div class="col-md-12 mb-3">
-                      <div class="card border-0 rounded-0">
-                        <!-- <div class="position-absolute top-0 start-0 bg-danger d-flex justify-content-center p-3">
-                          <div class="align-content-center">
-                            <h5 class="m-0 fw-bold text-white">19 Agustus 2024</h6>
-                          </div>
-                        </div> -->
-                        <img src="assets/img/kegiatan/1.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
-                        <div class="card-body p-0 mt-4">
-                          <h3 class="fw-bold">Badan Eksekutif Mahasiswa (BEM) periode 2022/2023</h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
-                          <div class="mt-4 clearfix">
-                            <div class="float-start">
-                              <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
-                            </div>
-                            <div class="float-end">
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-regular fa-heart"></i></a>
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-solid fa-share"></i></a>
-                            </div>
-                          </div>
+                <div class="col-md-12 mb-3">
+                  <div class="card border-0 rounded-0">
+                    <img src="assets/img/kegiatan/1.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
+                    <div class="card-body p-0 mt-4">
+                      <h3 class="fw-bold">Badan Eksekutif Mahasiswa (BEM) periode 2022/2023</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
+                      <div class="mt-4 clearfix">
+                        <div class="float-start">
+                          <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
+                        </div>
+                        <div class="float-end">
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-solid fa-share"></i>
+                          </a>
                         </div>
                       </div>
-                      <hr class="border mt-4">
                     </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="card border-0 rounded-0">
-                        <!-- <div class="position-absolute top-0 start-0 bg-danger d-flex justify-content-center p-3">
-                          <div class="align-content-center">
-                            <h5 class="m-0 fw-bold text-white">19 Agustus 2024</h6>
-                          </div>
-                        </div> -->
-                        <img src="assets/img/kegiatan/2.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
-                        <div class="card-body p-0 mt-4">
-                          <h3 class="fw-bold">Pelantikan Anggota BEM Periode 2022/2023 oleh Ketua ITBA Dian Cipta Cendikia (PSDKU KOTABUMI)</h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
-                          <div class="mt-4 clearfix">
-                            <div class="float-start">
-                              <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
-                            </div>
-                            <div class="float-end">
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-regular fa-heart"></i></a>
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-solid fa-share"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr class="border mt-4">
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="card border-0 rounded-0">
-                        <!-- <div class="position-absolute top-0 start-0 bg-danger d-flex justify-content-center p-3">
-                          <div class="align-content-center">
-                            <h5 class="m-0 fw-bold text-white">19 Agustus 2024</h6>
-                          </div>
-                        </div> -->
-                        <img src="assets/img/kegiatan/3.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
-                        <div class="card-body p-0 mt-4">
-                          <h3 class="fw-bold">MUBES BEM 18 September 2021</h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
-                          <div class="mt-4 clearfix">
-                            <div class="float-start">
-                              <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
-                            </div>
-                            <div class="float-end">
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-regular fa-heart"></i></a>
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-solid fa-share"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr class="border mt-4">
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="card border-0 rounded-0">
-                        <!-- <div class="position-absolute top-0 start-0 bg-danger d-flex justify-content-center p-3">
-                          <div class="align-content-center">
-                            <h5 class="m-0 fw-bold text-white">19 Agustus 2024</h6>
-                          </div>
-                        </div> -->
-                        <img src="assets/img/kegiatan/4.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
-                        <div class="card-body p-0 mt-4">
-                          <h3 class="fw-bold">Kegiatan BAKSOS, STMIK DIAN CIPTA CENDIKIA KOTA, BUMIBEM & MAHASISWA</h3>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
-                          <div class="mt-4 clearfix">
-                            <div class="float-start">
-                              <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
-                            </div>
-                            <div class="float-end">
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-regular fa-heart"></i></a>
-                              <a href="#" class="btn btn-light text-danger border fs-6"><i class="fa-solid fa-share"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <hr class="border mt-4">
-                    </div>
-                    
                   </div>
+                  <hr class="border mt-4">
                 </div>
-                <div class="col-md-3">
-                  <div class="card border-0 rounded-0 sticky-top bg-transparent" style="margin-top: -100px; padding-top: 100px;">
-                    <div class="">
-                      <div class="">
-                        <h5 class="mb-3 fw-bold m-0">Kategori</h5>
+                <div class="col-md-12 mb-3">
+                  <div class="card border-0 rounded-0">
+                    <img src="assets/img/kegiatan/2.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
+                    <div class="card-body p-0 mt-4">
+                      <h3 class="fw-bold">Pelantikan Anggota BEM Periode 2022/2023 oleh Ketua ITBA Dian Cipta Cendikia (PSDKU KOTABUMI)</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
+                      <div class="mt-4 clearfix">
+                        <div class="float-start">
+                          <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
+                        </div>
+                        <div class="float-end">
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-solid fa-share"></i>
+                          </a>
+                        </div>
                       </div>
-                      <hr class="border">
-                      <a href="#" class="btn btn-light w-100 rounded-0 text-start fw-medium border-0 active"><i class="fa-solid fa-caret-right text-danger me-2"></i> Kegiatan</a>
-                      <a href="artikel.html" class="btn btn-light w-100 rounded-0 text-start fw-medium border-0"><i class="fa-solid fa-caret-right text-danger me-2"></i> Artikel</a>
                     </div>
                   </div>
+                  <hr class="border mt-4">
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="card border-0 rounded-0">
+                    <img src="assets/img/kegiatan/3.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
+                    <div class="card-body p-0 mt-4">
+                      <h3 class="fw-bold">MUBES BEM 18 September 2021</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
+                      <div class="mt-4 clearfix">
+                        <div class="float-start">
+                          <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
+                        </div>
+                        <div class="float-end">
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-solid fa-share"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="border mt-4">
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="card border-0 rounded-0">
+                    <img src="assets/img/kegiatan/4.jpg" class="object-fit-cover" alt="..." style="max-height: 400px;">
+                    <div class="card-body p-0 mt-4">
+                      <h3 class="fw-bold">Kegiatan BAKSOS, STMIK DIAN CIPTA CENDIKIA KOTA, BUMIBEM & MAHASISWA</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum eius tempora quas. Obcaecati cumque perspiciatis magnam ex tempora, numquam, odio eius dicta molestiae amet tenetur eligendi accusamus. Non, quisquam.</p>
+                      <div class="mt-4 clearfix">
+                        <div class="float-start">
+                          <a href="#" class="btn btn-danger fw-medium px-4 rounded-2">Baca Lebih Banyak</a>
+                        </div>
+                        <div class="float-end">
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-regular fa-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-light text-danger border fs-6">
+                            <i class="fa-solid fa-share"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="border mt-4">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card border-0 rounded-0 sticky-top bg-transparent" style="margin-top: -100px; padding-top: 100px;">
+                <div class="">
+                  <div class="">
+                    <h5 class="mb-3 fw-bold m-0">Kategori</h5>
+                  </div>
+                  <hr class="border">
+                  <a href="#" class="btn btn-light w-100 rounded-0 text-start fw-medium border-0 active">
+                    <i class="fa-solid fa-caret-right text-danger me-2"></i> Kegiatan </a>
+                  <a href="artikel.html" class="btn btn-light w-100 rounded-0 text-start fw-medium border-0">
+                    <i class="fa-solid fa-caret-right text-danger me-2"></i> Artikel </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </div>
-
     <footer data-aos="fade-up" data-aos-duration="1200">
       <div class="bg-light">
         <div class="container pt-5 pb-3">
           <div class="text-center">
             <h4 class="text-uppercase text-danger mb-4 text-sub">bem itba dcc</h4>
-              <div class="link mt-3 d-flex justify-content-center flex-wrap">
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-solid fa-envelope fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
+            <div class="link mt-3 d-flex justify-content-center flex-wrap">
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-solid fa-envelope fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
             </div>
             <hr class="border">
             <div class="mt-3 mb-4">
-              <p>BEM ITBA DCC adalah lembaga eksekutif mahasiswa tertinggi di ITBA DCC, <br> di bawah pengawasan Legislatif Mahasiswa.</p>
+              <p>BEM ITBA DCC adalah lembaga eksekutif mahasiswa tertinggi di ITBA DCC, <br> di bawah pengawasan Legislatif Mahasiswa. </p>
             </div>
             <hr class="border">
             <div class="mt-4">
@@ -447,20 +458,16 @@
         </div>
       </div>
     </footer>
-    
     <!-- Animasi AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
     <!-- Typed -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
     <!-- Script.js -->
     <script src="assets/js/script.js"></script>
-
     <!-- Bootsrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
