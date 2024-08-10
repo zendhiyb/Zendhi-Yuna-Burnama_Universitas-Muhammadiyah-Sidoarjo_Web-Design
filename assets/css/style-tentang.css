@@ -1,0 +1,15 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-card-form{
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+
+.text-sub {
+    font-weight: 800;
+}

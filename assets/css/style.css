@@ -1,0 +1,804 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-sidebar {
+    background-image: url('img1.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    text-shadow: 0 0 15px black;
+}
+
+.btn-sidebar2 {
+    background-image: url('img2.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    text-shadow: 0 0 15px black;
+}
+
+.btn-sidebar3 {
+    background-image: url('img3.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    text-shadow: 0 0 15px black;
+}
+
+.btn-sidebar4 {
+    background-image: url('img4.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    text-shadow: 0 0 15px black;
+}
+
+.btn-sidebar5 {
+    background-image: url('img5.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    text-shadow: 0 0 15px black;
+}
+
+.btn-sidebar6 {
+    background-image: url('img6.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    text-shadow: 0 0 15px black;
+}
+
+.btn-sidebar:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.btn-sidebar2:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.btn-sidebar3:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.btn-sidebar4:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.btn-sidebar5:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.btn-sidebar6:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.text h2 {
+    font-weight: 900;
+}
+
+.text .text-bg {
+    background-image: url(flag4.gif);
+    filter: 
+        /* saturate(2) */
+        brightness(130%)
+    ;
+    background-position: 0 52%;
+    background-clip: text;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+.text-sub {
+    font-weight: 900;
+}
+
+.box-card {
+    transition: 0.3s;
+    min-height: 310px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+
+.box-card:hover {
+    transform: translate(-5px,-5px);
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+.link a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 159, 159);
+    border-radius: 10px;
+}
+  
+
+.img {
+    position: relative;
+    max-height:800px;
+  }
+  
+.img::before {
+    content: "";
+    background-image: url('1.jpg');
+    height: 100%; 
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.img-card img {
+    background-size: cover;
+    background-position: 100%;
+}
+
+.link-card {
+    text-decoration: none;
+}
+
+.bg-visimisi {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.bg-visimisi::before {
+    content: "";
+    background-image: url('3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-visimisi .content-visimisi {
+    position: relative;
+    z-index: 2;
+}
+
+.border-visi {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 180px;
+}
+
+.border-visimisi {
+    border: 1px white solid;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+
+.text-visi {
+    font-size: 18px;
+}
+
+.table tr td {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+.img-presiden {
+    /* box-shadow: 30px 30px 0px 0px rgba(0,0,0,0.1),15px 15px 0px 0px rgba(0,0,0,0.1); */
+    filter: drop-shadow(25px -10px 10px #d3d3d3);
+}
+
+.bg-presiden {
+    background-image: url('wave.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.text-nama {
+    font-weight: 900;
+}
+
+.text-tgl {
+    border-radius: 30px 0 0 30px;
+}
+
+.bg-visimisi1 {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    /* margin-bottom: 15%; */
+}
+
+.bg-visimisi1::before {
+    content: "";
+    background-image: url('bg-gallery3.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(90%)
+        blur(0px)
+        saturate(1)
+        opacity(100%)
+        blur(5px)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-visimisi1 .content-visimisi1 {
+    position: relative;
+    z-index: 2;
+}
+
+
+.container-gallery {
+    padding: 10px;
+}
+
+.image-container > .border-galery {
+    border: 1px rgb(255, 255, 255) solid;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.bg-img-mentri {
+    background-image: url('img1.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri2 {
+    background-image: url('k-img-2.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri3 {
+    background-image: url('k-img-3.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri4 {
+    background-image: url('k-img-4.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri5 {
+    background-image: url('k-img-5.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri6 {
+    background-image: url('k-img-6.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri7 {
+    background-image: url('k-img-7.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri8 {
+    background-image: url('k-img-8.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri9 {
+    background-image: url('k-img-9.png');
+    background-position: center;
+    background-size: cover;
+    filter: 
+        saturate(1)
+        grayscale(100%)
+    ;
+    transition: 0.3s;
+    
+}
+
+.bg-img-mentri:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri2:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri3:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri4:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri5:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri6:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri7:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri8:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.bg-img-mentri9:hover {
+    filter: 
+    saturate(1)
+    grayscale(0%)
+    ;
+}
+
+.link .text-footer {
+    font-size: 13px;
+}
+
+.btn-footer:hover {
+    background-color: rgb(221, 0, 0);
+    border: #ffffff 1px solid;
+}
+
+footer {
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+
+.img-pita{
+    filter: 
+    blur(2px)
+    ;
+}
+
+/* kegiatan */
+
+.img-kegiatan {
+    position: relative;
+    height:370px;
+  }
+  
+.img-kegiatan::before {
+    content: "";
+    background-image: url('kegiatan.png');
+    height: 100%; 
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-kegiatan .content-kegiatan {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.img-card .img-kegiatan {
+    background-size: cover;
+    background-position: 100%;
+}
+
+.text .judul-kegiatan {
+    font-weight: 900;
+    padding: 120px 0 5px 0;
+}
+
+.border-kegiatan {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 200px;
+}
+
+.box-content {
+    margin-bottom: 10%;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+
+/* STRUKTURAL */
+
+.text-bold {
+    font-weight: 900;
+}
+
+.box-content-struktural {
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+
+.img-struk {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 3px solid rgb(214, 214, 214);
+    box-shadow: 0px 0px 53px 5px rgba(196, 196, 196, 0.247);    
+}
+
+/* ARTIKEL */
+
+
+.img-artikel {
+    position: relative;
+    height:370px;
+}
+
+.img-artikel::before {
+    content: "";
+    background-image: url('artikel.png');
+    height: 100%; 
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-artikel .content-artikel {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.img-card .img-artikel {
+    background-size: cover;
+    background-position: 100%;
+}
+
+.border-artikel {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 160px;
+}
+
+/* GALLERY */
+
+.img-gallery {
+    position: relative;
+    height:370px;
+}
+
+.img-gallery::before {
+    content: "";
+    background-image: url('gallery.png');
+    height: 100%; 
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-gallery .content-gallery {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.img-card .img-gallery {
+    background-size: cover;
+    background-position: 100%;
+}
+
+.border-artikel {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 160px;
+}
+
+/* PROGRAM KERJA */
+
+.img-program-kerja {
+    position: relative;
+    height:370px;
+}
+
+.img-program-kerja::before {
+    content: "";
+    background-image: url('program-kerja.png');
+    height: 100%; 
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-program-kerja .content-program-kerja {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.img-card .img-program-kerja {
+    background-size: cover;
+    background-position: 100%;
+}
+
+.border-program-kerja {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 320px;
+}
+
+.box-content-proker {
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
+
+/* KEMENTRIAN */
+
+.img-kementrian {
+    position: relative;
+    height:370px;
+}
+
+.img-kementrian::before {
+    content: "";
+    background-image: url('1.jpg');
+    height: 100%; 
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: 
+        brightness(30%)
+        blur(0px)
+        saturate(1)
+    ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-kementrian .content-kementrian {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.img-card .img-kementrian {
+    background-size: cover;
+    background-position: 100%;
+}
+
+.border-kementrian {
+    border-bottom: 3px solid rgb(255, 0, 0);
+    width: 320px;
+}
+
+.box-content-kem {
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.1);
+}
