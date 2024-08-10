@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Gallery</title>
     <!-- Bootsrap 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- Font Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-
     <!-- Animasi AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
-</head>
-<body class="bg-light">
-
+  </head>
+  <body class="bg-light">
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-0 border-0 shadow border-bottom border-danger border-5">
           <div class="modal-body p-5">
             <div class="">
-              <h4 class="text-sub mb-3">
-                Kotak Saran
-              </h4>
+              <h4 class="text-sub mb-3"> Kotak Saran </h4>
             </div>
             <hr class="border">
             <form>
@@ -68,10 +59,9 @@
         </div>
       </div>
     </div>
-
     <nav class="navbar navbar-expand-lg bg-white fixed-top py-2 shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="index.html" >
+        <a class="navbar-brand" href="index.html">
           <img src="assets/img/logo.png" height="50px" alt="">
           <span class="text-uppercase ms-2 fw-bold text-secondary">bem itba dcc</span>
         </a>
@@ -79,415 +69,439 @@
           <i class="fa-solid fa-bars"></i>
         </a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav" >
-            <!-- <div class="vr mt-2" style="height: 25px;"></div>
-            <a class="nav-link fw-medium text-secondary ms-2 me-1" href="#"><i class="fa-solid fa-globe"></i></a>
-            <a class="nav-link fw-medium text-secondary me-2" href="#"><i class="fa-solid fa-question"></i></a> -->
-            <button class="fw-medium ms-2 p-2 rounded-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-box-open me-2"></i> Kotak Pesan</button>
-            <button class="fw-medium ms-2 p-2 rounded-2 px-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="fw-medium ms-2 p-2 rounded-2 px-3 btn btn-outline-danger border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-list"></i></button>
+          <div class="navbar-nav">
+            <button class="fw-medium ms-2 p-2 rounded-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-box-open me-2"></i> Kotak Pesan </button>
+            <button class="fw-medium ms-2 p-2 rounded-2 px-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="fw-medium ms-2 p-2 rounded-2 px-3 btn btn-outline-danger border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-list"></i>
+            </button>
           </div>
         </div>
       </div>
     </nav>
-
-    
-
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="clearfix">
-        <a class="float-start p-4 fw-bold text-danger" href="index.html" style="text-decoration: none;"><i class="fa-solid fa-chevron-left me-2"></i>dashboard</a>
-        <a class="float-end p-4 text-danger fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" href="" style="text-decoration: none;">Kembali <i class="ms-2 fa-solid fa-chevron-right"></i></a>
+        <a class="float-start p-4 fw-bold text-danger" href="index.html" style="text-decoration: none;">
+          <i class="fa-solid fa-chevron-left me-2"></i>dashboard </a>
+        <a class="float-end p-4 text-danger fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" href="" style="text-decoration: none;">Kembali <i class="ms-2 fa-solid fa-chevron-right"></i>
+        </a>
       </div>
-        <div class="offcanvas-body m-0 p-0 bg-light">
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="kegiatan.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-calendar fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Kegiatan</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="struktural.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar2" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-people-group fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Struktural</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="program-kerja.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar3" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-clipboard fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Program Kerja</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="kementrian.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar4" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-users-viewfinder fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Kementerian</p>
-                </div>
-            </a>
-          </div>              
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="artikel.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar5" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-newspaper fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Artikel</p>
-                </div>
-            </a>
-          </div>              
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="gallery.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar6" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-image fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Gallery</p>
-                </div>
-            </a>
-          </div>              
+      <div class="offcanvas-body m-0 p-0 bg-light">
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="kegiatan.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-calendar fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Kegiatan</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="struktural.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar2" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-people-group fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Struktural</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="program-kerja.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar3" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-clipboard fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Program Kerja</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="kementrian.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar4" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-users-viewfinder fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Kementerian</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="artikel.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar5" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-newspaper fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Artikel</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="gallery.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar6" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-image fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Gallery</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 bg-transparent">
           <div class="position-absolute top-100 start-50 translate-middle mt-5">
-            <a href="" class="bg-danger p-3 text-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark px-1"></i></a>
+            <a href="" class="bg-danger p-3 text-white rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark px-1"></i>
+            </a>
           </div>
           <div class="modal-body m-0 text-center">
             <div class="input-group mb-3">
-              <span class="input-group-text bg-danger text-white rounded-left p-3" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span class="input-group-text bg-danger text-white rounded-left p-3" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
               <input type="text" class="form-control rounded-right border-0 bg-light p-3 px-4 d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none" placeholder="Masukkan kata kunci..." aria-describedby="basic-addon1">
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    
     <div class="" style="margin-top: 75px;">
-        <div class="">
-            <div class="img-gallery">
-              <div class="content-gallery" >
-                <div class="text-start">
-                  <div class="container">
-                    <div class="text">
-                        <h1 class="text-white border-gallery judul-kegiatan" data-aos="fade-right" data-aos-duration="1200">Gallery</h1>
-                        <p class="text-white fs-5" data-aos="fade-right" data-aos-duration="1400">Abadikan setiap momen bersama BEM ITBA DCC. <br> Lihat dokumentasi kegiatan dan acara yang telah kami selenggarakan.</p>
-                      </div>
+      <div class="">
+        <div class="img-gallery">
+          <div class="content-gallery">
+            <div class="text-start">
+              <div class="container">
+                <div class="text">
+                  <h1 class="text-white border-gallery judul-kegiatan" data-aos="fade-right" data-aos-duration="1200">Gallery</h1>
+                  <p class="text-white fs-5" data-aos="fade-right" data-aos-duration="1400">Abadikan setiap momen bersama BEM ITBA DCC. <br> Lihat dokumentasi kegiatan dan acara yang telah kami selenggarakan. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-3 bg-danger"></div>
+        <div class="" style="margin-top: -30px;">
+          <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L120,8.3C240,17,480,33,720,38.3C960,43,1200,37,1440,41.7C1680,47,1920,63,2160,60C2400,57,2640,33,2880,30C3120,27,3360,43,3600,46.7C3840,50,4080,40,4320,31.7C4560,23,4800,17,5040,25C5280,33,5520,57,5760,68.3C6000,80,6240,80,6480,66.7C6720,53,6960,27,7200,18.3C7440,10,7680,20,7920,26.7C8160,33,8400,37,8640,35C8880,33,9120,27,9360,23.3C9600,20,9840,20,10080,23.3C10320,27,10560,33,10800,45C11040,57,11280,73,11520,75C11760,77,12000,63,12240,58.3C12480,53,12720,57,12960,50C13200,43,13440,27,13680,31.7C13920,37,14160,63,14400,70C14640,77,14880,63,15120,61.7C15360,60,15600,70,15840,66.7C16080,63,16320,47,16560,35C16800,23,17040,17,17160,13.3L17280,10L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path>
+            <defs>
+              <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,20L120,30C240,40,480,60,720,58.3C960,57,1200,33,1440,20C1680,7,1920,3,2160,5C2400,7,2640,13,2880,25C3120,37,3360,53,3600,61.7C3840,70,4080,70,4320,70C4560,70,4800,70,5040,58.3C5280,47,5520,23,5760,25C6000,27,6240,53,6480,63.3C6720,73,6960,67,7200,63.3C7440,60,7680,60,7920,55C8160,50,8400,40,8640,41.7C8880,43,9120,57,9360,66.7C9600,77,9840,83,10080,78.3C10320,73,10560,57,10800,51.7C11040,47,11280,53,11520,51.7C11760,50,12000,40,12240,30C12480,20,12720,10,12960,16.7C13200,23,13440,47,13680,56.7C13920,67,14160,63,14400,61.7C14640,60,14880,60,15120,60C15360,60,15600,60,15840,51.7C16080,43,16320,27,16560,20C16800,13,17040,17,17160,18.3L17280,20L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path>
+            <defs>
+              <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,40L120,43.3C240,47,480,53,720,55C960,57,1200,53,1440,50C1680,47,1920,43,2160,38.3C2400,33,2640,27,2880,35C3120,43,3360,67,3600,78.3C3840,90,4080,90,4320,80C4560,70,4800,50,5040,46.7C5280,43,5520,57,5760,61.7C6000,67,6240,63,6480,65C6720,67,6960,73,7200,66.7C7440,60,7680,40,7920,31.7C8160,23,8400,27,8640,31.7C8880,37,9120,43,9360,43.3C9600,43,9840,37,10080,36.7C10320,37,10560,43,10800,46.7C11040,50,11280,50,11520,50C11760,50,12000,50,12240,51.7C12480,53,12720,57,12960,56.7C13200,57,13440,53,13680,53.3C13920,53,14160,57,14400,48.3C14640,40,14880,20,15120,20C15360,20,15600,40,15840,43.3C16080,47,16320,33,16560,30C16800,27,17040,33,17160,36.7L17280,40L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="py-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-white rounded-2 py-3 mb-3 px-3">
+              <ol class="breadcrumb m-0 fw-bold">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-dark" style="text-decoration: none;">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+              </ol>
+            </nav>
+            <div class="container-gallery">
+              <div class="row">
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
+                    <div class="image-container">
+                      <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="image-container">
+                      <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="image-container">
+                      <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="image-container">
+                      <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
+                    <div class="image-container">
+                      <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="image-container">
+                      <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="image-container">
+                      <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="image-container">
+                      <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
+                    <div class="image-container">
+                      <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="image-container">
+                      <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="image-container">
+                      <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="image-container">
+                      <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
+                    <div class="image-container">
+                      <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="image-container">
+                      <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
+                    <div class="image-container">
+                      <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="image-container">
+                      <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
+                    <div class="image-container">
+                      <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 p-1">
+                  <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
+                    <div class="image-container">
+                      <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="py-3 bg-danger"></div>
-            <div class="" style="margin-top: -30px;">
-                <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L120,8.3C240,17,480,33,720,38.3C960,43,1200,37,1440,41.7C1680,47,1920,63,2160,60C2400,57,2640,33,2880,30C3120,27,3360,43,3600,46.7C3840,50,4080,40,4320,31.7C4560,23,4800,17,5040,25C5280,33,5520,57,5760,68.3C6000,80,6240,80,6480,66.7C6720,53,6960,27,7200,18.3C7440,10,7680,20,7920,26.7C8160,33,8400,37,8640,35C8880,33,9120,27,9360,23.3C9600,20,9840,20,10080,23.3C10320,27,10560,33,10800,45C11040,57,11280,73,11520,75C11760,77,12000,63,12240,58.3C12480,53,12720,57,12960,50C13200,43,13440,27,13680,31.7C13920,37,14160,63,14400,70C14640,77,14880,63,15120,61.7C15360,60,15600,70,15840,66.7C16080,63,16320,47,16560,35C16800,23,17040,17,17160,13.3L17280,10L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(220, 53, 69, 1)" offset="0%"></stop><stop stop-color="rgba(220, 53, 69, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,20L120,30C240,40,480,60,720,58.3C960,57,1200,33,1440,20C1680,7,1920,3,2160,5C2400,7,2640,13,2880,25C3120,37,3360,53,3600,61.7C3840,70,4080,70,4320,70C4560,70,4800,70,5040,58.3C5280,47,5520,23,5760,25C6000,27,6240,53,6480,63.3C6720,73,6960,67,7200,63.3C7440,60,7680,60,7920,55C8160,50,8400,40,8640,41.7C8880,43,9120,57,9360,66.7C9600,77,9840,83,10080,78.3C10320,73,10560,57,10800,51.7C11040,47,11280,53,11520,51.7C11760,50,12000,40,12240,30C12480,20,12720,10,12960,16.7C13200,23,13440,47,13680,56.7C13920,67,14160,63,14400,61.7C14640,60,14880,60,15120,60C15360,60,15600,60,15840,51.7C16080,43,16320,27,16560,20C16800,13,17040,17,17160,18.3L17280,20L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,40L120,43.3C240,47,480,53,720,55C960,57,1200,53,1440,50C1680,47,1920,43,2160,38.3C2400,33,2640,27,2880,35C3120,43,3360,67,3600,78.3C3840,90,4080,90,4320,80C4560,70,4800,50,5040,46.7C5280,43,5520,57,5760,61.7C6000,67,6240,63,6480,65C6720,67,6960,73,7200,66.7C7440,60,7680,40,7920,31.7C8160,23,8400,27,8640,31.7C8880,37,9120,43,9360,43.3C9600,43,9840,37,10080,36.7C10320,37,10560,43,10800,46.7C11040,50,11280,50,11520,50C11760,50,12000,50,12240,51.7C12480,53,12720,57,12960,56.7C13200,57,13440,53,13680,53.3C13920,53,14160,57,14400,48.3C14640,40,14880,20,15120,20C15360,20,15600,40,15840,43.3C16080,47,16320,33,16560,30C16800,27,17040,33,17160,36.7L17280,40L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path></svg>
-            </div>
-            <div class="container">
-                <div class="py-5">
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-white rounded-2 py-3 mb-3 px-3">
-                        <ol class="breadcrumb m-0 fw-bold">
-                          <li class="breadcrumb-item" ><a href="#" class="text-dark" style="text-decoration: none;">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Gallery</li>
-                        </ol>
-                      </nav>
-                    <div class="container-gallery">
-                      <div class="row">
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
-                            <div class="image-container">
-                              <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="image-container">
-                              <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
-                            <div class="image-container">
-                              <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="image-container">
-                              <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
-                            <div class="image-container">
-                              <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="image-container">
-                              <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
-                            <div class="image-container">
-                              <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="image-container">
-                              <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
-                            <div class="image-container">
-                              <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="image-container">
-                              <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
-                            <div class="image-container">
-                              <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="image-container">
-                              <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="position-absolute top-0 start-0 bg-" style="height: 30px; width: 30px;"></div>
-                            <div class="image-container">
-                              <img src="assets/img/galery/1.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/2.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/3.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1600">
-                            <div class="image-container">
-                              <img src="assets/img/galery/4.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="1800">
-                            <div class="image-container">
-                              <img src="assets/img/galery/5.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="image-container">
-                              <img src="assets/img/galery/6.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2200">
-                            <div class="image-container">
-                              <img src="assets/img/galery/7.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3 p-1">
-                          <div class="card card-gallery border-0 rounded-0" data-aos="fade-up" data-aos-duration="2400">
-                            <div class="image-container">
-                              <img src="assets/img/galery/8.jpg" class="card-img-top rounded-0 border-galery" alt="...">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
           </div>
+        </div>
+      </div>
     </div>
-
-
     <footer data-aos="fade-up" data-aos-duration="1200">
       <div class="bg-light">
         <div class="container pt-5 pb-3">
           <div class="text-center">
             <h4 class="text-uppercase text-danger mb-4 text-sub">bem itba dcc</h4>
-              <div class="link mt-3 d-flex justify-content-center flex-wrap">
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-solid fa-envelope fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
+            <div class="link mt-3 d-flex justify-content-center flex-wrap">
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-solid fa-envelope fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
             </div>
             <hr class="border">
             <div class="mt-3 mb-4">
-              <p>BEM ITBA DCC adalah lembaga eksekutif mahasiswa tertinggi di ITBA DCC, <br> di bawah pengawasan Legislatif Mahasiswa.</p>
+              <p>BEM ITBA DCC adalah lembaga eksekutif mahasiswa tertinggi di ITBA DCC, <br> di bawah pengawasan Legislatif Mahasiswa. </p>
             </div>
             <hr class="border">
             <div class="mt-4">
@@ -564,20 +578,16 @@
         </div>
       </div>
     </footer>
-    
     <!-- Animasi AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
     <!-- Typed -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
     <!-- Script.js -->
     <script src="assets/js/script.js"></script>
-
     <!-- Bootsrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
