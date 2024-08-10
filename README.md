@@ -1,3 +1,5 @@
+# Lomba Web Design BEM ITBA DCC
+
 Deskripsi Website BEM ITBA DCC
 Website BEM ITBA DCC dirancang dengan tema merah putih yang mencerminkan semangat dan identitas nasional. Menggunakan teknologi web modern, website ini menawarkan pengalaman pengguna yang interaktif dan visual yang menarik. Desainnya memanfaatkan HTML, CSS, JavaScript, serta framework Bootstrap 5.3.3, TypeScript, dan animasi AOS (Animate on Scroll) untuk memberikan tampilan yang responsif dan dinamis.
 
