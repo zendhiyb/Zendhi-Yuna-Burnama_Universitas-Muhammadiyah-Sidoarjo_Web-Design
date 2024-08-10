@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Dashboard</title>
     <!-- Bootsrap 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- Font Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <!-- Font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
-
     <!-- Animasi AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content rounded-0 border-0 shadow border-bottom border-danger border-5">
           <div class="modal-body p-5">
             <div class="">
-              <h4 class="text-sub mb-3">
-                Kotak Saran
-              </h4>
+              <h4 class="text-sub mb-3"> Kotak Saran </h4>
             </div>
             <hr class="border">
             <form>
@@ -68,7 +59,6 @@
         </div>
       </div>
     </div>
-
     <nav class="navbar navbar-expand-lg bg-white fixed-top py-2 shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="index.html" data-aos="fade-right" data-aos-duration="1300">
@@ -85,232 +75,267 @@
             <a class="nav-link fw-medium text-secondary rounded-5 me-2" href="#visimisi">Visi & Misi</a>
             <div class="vr mt-2 border" style="height: 25px;"></div>
             <a class="nav-link fw-medium text-secondary rounded-5 me-2" href="#gallery">Gallery</a>
-            <!-- <div class="vr mt-2" style="height: 25px;"></div>
-            <a class="nav-link fw-medium text-secondary ms-2 me-1" href="#"><i class="fa-solid fa-globe"></i></a>
-            <a class="nav-link fw-medium text-secondary me-2" href="#"><i class="fa-solid fa-question"></i></a> -->
             <div class="vr mt-2 border" style="height: 25px;"></div>
-            <button class="fw-medium ms-2 p-2 rounded-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-box-open me-2"></i> Kotak Pesan</button>
-            <button class="fw-medium ms-2 p-2 rounded-2 px-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <!-- <div class="vr mt-2" style="height: 25px;"></div> -->
-            <button class="fw-medium ms-2 p-2 rounded-2 px-3 btn btn-outline-danger border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-list"></i></button>
+            <button class="fw-medium ms-2 p-2 rounded-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <i class="fa-solid fa-box-open me-2"></i> Kotak Pesan </button>
+            <button class="fw-medium ms-2 p-2 rounded-2 px-2 btn btn-outline-danger border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="fw-medium ms-2 p-2 rounded-2 px-3 btn btn-outline-danger border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-list"></i>
+            </button>
           </div>
         </div>
       </div>
     </nav>
-
-    
-
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="clearfix">
-        <a class="float-start p-4 fw-bold text-danger" href="index.html" style="text-decoration: none;"><i class="fa-solid fa-chevron-left me-2"></i>dashboard</a>
-        <a class="float-end p-4 text-danger fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" href="" style="text-decoration: none;">Kembali <i class="ms-2 fa-solid fa-chevron-right"></i></a>
+        <a class="float-start p-4 fw-bold text-danger" href="index.html" style="text-decoration: none;">
+          <i class="fa-solid fa-chevron-left me-2"></i>dashboard </a>
+        <a class="float-end p-4 text-danger fw-bold" data-bs-dismiss="offcanvas" aria-label="Close" href="" style="text-decoration: none;">Kembali <i class="ms-2 fa-solid fa-chevron-right"></i>
+        </a>
       </div>
-        <div class="offcanvas-body m-0 p-0 bg-light">
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="kegiatan.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-calendar fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Kegiatan</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="struktural.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar2" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-people-group fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Struktural</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="program-kerja.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar3" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-clipboard fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Program Kerja</p>
-                </div>
-            </a>
-          </div>         
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="kementrian.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar4" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-users-viewfinder fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Kementerian</p>
-                </div>
-            </a>
-          </div>              
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="artikel.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar5" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-regular fa-newspaper fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Artikel</p>
-                </div>
-            </a>
-          </div>              
-          <div class="d-flex pt-3 pb-0 px-3">
-            <a href="gallery.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar6" style="text-decoration: none;">
-                <div class="d-inline-block">
-                    <i class="fa-solid fa-image fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
-                </div>
-                <div class="d-inline-block">
-                    <p class="m-0 text-white fw-medium fs-6">Gallery</p>
-                </div>
-            </a>
-          </div>              
+      <div class="offcanvas-body m-0 p-0 bg-light">
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="kegiatan.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-calendar fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Kegiatan</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="struktural.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar2" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-people-group fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Struktural</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="program-kerja.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar3" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-clipboard fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Program Kerja</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="kementrian.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar4" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-users-viewfinder fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Kementerian</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="artikel.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar5" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-regular fa-newspaper fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Artikel</p>
+            </div>
+          </a>
+        </div>
+        <div class="d-flex pt-3 pb-0 px-3">
+          <a href="gallery.html" class="text-dark btn btn-danger rounded-1 px-3 py-3 w-100 text-start shadow-sm btn-sidebar6" style="text-decoration: none;">
+            <div class="d-inline-block">
+              <i class="fa-solid fa-image fs-5 text-center" style="color: #ffffff; width: 40px;"></i>
+            </div>
+            <div class="d-inline-block">
+              <p class="m-0 text-white fw-medium fs-6">Gallery</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 bg-transparent">
           <div class="position-absolute top-100 start-50 translate-middle mt-5">
-            <a href="" class="bg-danger p-3 text-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark px-1"></i></a>
+            <a href="" class="bg-danger p-3 text-white rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark px-1"></i>
+            </a>
           </div>
           <div class="modal-body m-0 text-center">
             <div class="input-group mb-3">
-              <span class="input-group-text bg-danger text-white rounded-left p-3" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <span class="input-group-text bg-danger text-white rounded-left p-3" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
               <input type="text" class="form-control rounded-right border-0 bg-light p-3 px-4 d-inline-flex focus-ring focus-ring-light py-1 px-2 text-decoration-none" placeholder="Masukkan kata kunci..." aria-describedby="basic-addon1">
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="mb-5" style="margin-top: 75px;">
       <div class="mb-5">
         <div class="img">
-          <div class="content" >
+          <div class="content">
             <div class="text-center">
               <img src="assets/img/logo.png" alt="" class="bg-light rounded-circle" height="130px" style="margin-top: 110px;" data-aos="fade-up" data-aos-duration="1000">
               <div class="text">
-                <h3 class="mt-4 text-white fw-medium" data-aos="fade-up" data-aos-duration="1500"><span id="judul"></span></h3>
+                <h3 class="mt-4 text-white fw-medium" data-aos="fade-up" data-aos-duration="1500">
+                  <span id="judul"></span>
+                </h3>
                 <h2 class="text-bg mt-3" data-aos="fade-up" data-aos-duration="1500">Institut Teknologi Bisnis dan Bahasa Dian Cipta Cendikia</h2>
                 <div class="tombol mt-4 mb-5">
                   <a href="" class="btn btn-light text-danger rounded-5 px-4 fw-medium shadow-sm" data-aos="fade-up" data-aos-duration="1800">Selengkapnya</a>
                 </div>
               </div>
               <div>
-                <svg id="wave"  style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(232.552, 232.552, 232.552, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,63L60,80.5C120,98,240,133,360,143.5C480,154,600,140,720,122.5C840,105,960,84,1080,94.5C1200,105,1320,147,1440,136.5C1560,126,1680,63,1800,59.5C1920,56,2040,112,2160,112C2280,112,2400,56,2520,59.5C2640,63,2760,126,2880,154C3000,182,3120,175,3240,171.5C3360,168,3480,168,3600,143.5C3720,119,3840,70,3960,56C4080,42,4200,63,4320,87.5C4440,112,4560,140,4680,143.5C4800,147,4920,126,5040,126C5160,126,5280,147,5400,140C5520,133,5640,98,5760,84C5880,70,6000,77,6120,91C6240,105,6360,126,6480,140C6600,154,6720,161,6840,161C6960,161,7080,154,7200,157.5C7320,161,7440,175,7560,161C7680,147,7800,105,7920,87.5C8040,70,8160,77,8280,91C8400,105,8520,126,8580,136.5L8640,147L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,126L60,122.5C120,119,240,112,360,94.5C480,77,600,49,720,56C840,63,960,105,1080,129.5C1200,154,1320,161,1440,136.5C1560,112,1680,56,1800,59.5C1920,63,2040,126,2160,150.5C2280,175,2400,161,2520,161C2640,161,2760,175,2880,178.5C3000,182,3120,175,3240,171.5C3360,168,3480,168,3600,164.5C3720,161,3840,154,3960,147C4080,140,4200,133,4320,129.5C4440,126,4560,126,4680,108.5C4800,91,4920,56,5040,49C5160,42,5280,63,5400,70C5520,77,5640,70,5760,70C5880,70,6000,77,6120,94.5C6240,112,6360,140,6480,157.5C6600,175,6720,182,6840,185.5C6960,189,7080,189,7200,164.5C7320,140,7440,91,7560,59.5C7680,28,7800,14,7920,7C8040,0,8160,0,8280,24.5C8400,49,8520,98,8580,122.5L8640,147L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 0, 0, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,42L60,42C120,42,240,42,360,56C480,70,600,98,720,112C840,126,960,126,1080,133C1200,140,1320,154,1440,157.5C1560,161,1680,154,1800,143.5C1920,133,2040,119,2160,119C2280,119,2400,133,2520,143.5C2640,154,2760,161,2880,157.5C3000,154,3120,140,3240,133C3360,126,3480,126,3600,105C3720,84,3840,42,3960,38.5C4080,35,4200,70,4320,98C4440,126,4560,147,4680,133C4800,119,4920,70,5040,45.5C5160,21,5280,21,5400,49C5520,77,5640,133,5760,161C5880,189,6000,189,6120,168C6240,147,6360,105,6480,101.5C6600,98,6720,133,6840,140C6960,147,7080,126,7200,112C7320,98,7440,91,7560,84C7680,77,7800,70,7920,63C8040,56,8160,49,8280,52.5C8400,56,8520,70,8580,77L8640,84L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,63L60,70C120,77,240,91,360,94.5C480,98,600,91,720,73.5C840,56,960,28,1080,21C1200,14,1320,28,1440,45.5C1560,63,1680,84,1800,105C1920,126,2040,147,2160,136.5C2280,126,2400,84,2520,56C2640,28,2760,14,2880,28C3000,42,3120,84,3240,87.5C3360,91,3480,56,3600,42C3720,28,3840,35,3960,56C4080,77,4200,112,4320,108.5C4440,105,4560,63,4680,63C4800,63,4920,105,5040,122.5C5160,140,5280,133,5400,126C5520,119,5640,112,5760,91C5880,70,6000,35,6120,28C6240,21,6360,42,6480,49C6600,56,6720,49,6840,63C6960,77,7080,112,7200,129.5C7320,147,7440,147,7560,150.5C7680,154,7800,161,7920,140C8040,119,8160,70,8280,59.5C8400,49,8520,77,8580,91L8640,105L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path></svg>            
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                      <stop stop-color="rgba(232.552, 232.552, 232.552, 1)" offset="0%"></stop>
+                      <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,63L60,80.5C120,98,240,133,360,143.5C480,154,600,140,720,122.5C840,105,960,84,1080,94.5C1200,105,1320,147,1440,136.5C1560,126,1680,63,1800,59.5C1920,56,2040,112,2160,112C2280,112,2400,56,2520,59.5C2640,63,2760,126,2880,154C3000,182,3120,175,3240,171.5C3360,168,3480,168,3600,143.5C3720,119,3840,70,3960,56C4080,42,4200,63,4320,87.5C4440,112,4560,140,4680,143.5C4800,147,4920,126,5040,126C5160,126,5280,147,5400,140C5520,133,5640,98,5760,84C5880,70,6000,77,6120,91C6240,105,6360,126,6480,140C6600,154,6720,161,6840,161C6960,161,7080,154,7200,157.5C7320,161,7440,175,7560,161C7680,147,7800,105,7920,87.5C8040,70,8160,77,8280,91C8400,105,8520,126,8580,136.5L8640,147L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path>
+                  <defs>
+                    <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                      <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                      <stop stop-color="rgba(255, 0, 0, 1)" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,126L60,122.5C120,119,240,112,360,94.5C480,77,600,49,720,56C840,63,960,105,1080,129.5C1200,154,1320,161,1440,136.5C1560,112,1680,56,1800,59.5C1920,63,2040,126,2160,150.5C2280,175,2400,161,2520,161C2640,161,2760,175,2880,178.5C3000,182,3120,175,3240,171.5C3360,168,3480,168,3600,164.5C3720,161,3840,154,3960,147C4080,140,4200,133,4320,129.5C4440,126,4560,126,4680,108.5C4800,91,4920,56,5040,49C5160,42,5280,63,5400,70C5520,77,5640,70,5760,70C5880,70,6000,77,6120,94.5C6240,112,6360,140,6480,157.5C6600,175,6720,182,6840,185.5C6960,189,7080,189,7200,164.5C7320,140,7440,91,7560,59.5C7680,28,7800,14,7920,7C8040,0,8160,0,8280,24.5C8400,49,8520,98,8580,122.5L8640,147L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path>
+                  <defs>
+                    <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                      <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                      <stop stop-color="rgba(255, 0, 0, 1)" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,42L60,42C120,42,240,42,360,56C480,70,600,98,720,112C840,126,960,126,1080,133C1200,140,1320,154,1440,157.5C1560,161,1680,154,1800,143.5C1920,133,2040,119,2160,119C2280,119,2400,133,2520,143.5C2640,154,2760,161,2880,157.5C3000,154,3120,140,3240,133C3360,126,3480,126,3600,105C3720,84,3840,42,3960,38.5C4080,35,4200,70,4320,98C4440,126,4560,147,4680,133C4800,119,4920,70,5040,45.5C5160,21,5280,21,5400,49C5520,77,5640,133,5760,161C5880,189,6000,189,6120,168C6240,147,6360,105,6480,101.5C6600,98,6720,133,6840,140C6960,147,7080,126,7200,112C7320,98,7440,91,7560,84C7680,77,7800,70,7920,63C8040,56,8160,49,8280,52.5C8400,56,8520,70,8580,77L8640,84L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path>
+                  <defs>
+                    <linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0">
+                      <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                      <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                  </defs>
+                  <path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,63L60,70C120,77,240,91,360,94.5C480,98,600,91,720,73.5C840,56,960,28,1080,21C1200,14,1320,28,1440,45.5C1560,63,1680,84,1800,105C1920,126,2040,147,2160,136.5C2280,126,2400,84,2520,56C2640,28,2760,14,2880,28C3000,42,3120,84,3240,87.5C3360,91,3480,56,3600,42C3720,28,3840,35,3960,56C4080,77,4200,112,4320,108.5C4440,105,4560,63,4680,63C4800,63,4920,105,5040,122.5C5160,140,5280,133,5400,126C5520,119,5640,112,5760,91C5880,70,6000,35,6120,28C6240,21,6360,42,6480,49C6600,56,6720,49,6840,63C6960,77,7080,112,7200,129.5C7320,147,7440,147,7560,150.5C7680,154,7800,161,7920,140C8040,119,8160,70,8280,59.5C8400,49,8520,77,8580,91L8640,105L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path>
+                </svg>
               </div>
-            </div >
+            </div>
           </div>
         </div>
         <span id="tentang"></span>
       </div>
-      
       <div class="bg-white py-5">
         <div class="container">
-
           <div class=" text-start mb-3 clearfix">
             <h4 class="text-sub text-danger fs-2 lh-sm mb-3 float-md-start">Tentang Kami</h4>
             <div class="float-md-end "></div>
           </div>
-
           <div class="py-4">
             <div class="row">
               <div class="col-lg-3 mb-4">
                 <div class="" data-aos="fade-right" data-aos-duration="1200">
                   <a href="kegiatan.html" class="link-card">
-                  <div class="p-4 box-card text-dark rounded-3">
-                    <div class="clearfix">
-                      <h5 class="float-start fw-bold text-opacity-75">Kegiatan</h5>
-                      <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
-                    </div>
-                    <hr class="border">
-                    <div class="" style="min-height: 160px;">
-                      <p>Menampilkan acara BEM ITBA DCC, seperti seminar, workshop, kompetisi, dan kegiatan sosial yang meningkatkan partisipasi mahasiswa.</p>
-                    </div>
-                    <div class="clearfix">
-                      <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                      <div class="float-end px-3">
-                        <i class="fa-solid fa-arrow-right text-secondary"></i>
+                    <div class="p-4 box-card text-dark rounded-3">
+                      <div class="clearfix">
+                        <h5 class="float-start fw-bold text-opacity-75">Kegiatan</h5>
+                        <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
+                      </div>
+                      <hr class="border">
+                      <div class="" style="min-height: 160px;">
+                        <p>Menampilkan acara BEM ITBA DCC, seperti seminar, workshop, kompetisi, dan kegiatan sosial yang meningkatkan partisipasi mahasiswa.</p>
+                      </div>
+                      <div class="clearfix">
+                        <p class="card-text float-start">
+                          <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                        </p>
+                        <div class="float-end px-3">
+                          <i class="fa-solid fa-arrow-right text-secondary"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
                 </div>
               </div>
               <div class="col-lg-3 mb-4">
                 <div class="" data-aos="fade-right" data-aos-duration="1600">
                   <a href="struktural.html" class="link-card">
-                  <div class="p-4 box-card text-dark rounded-3">
-                    <div class="clearfix">
-                      <h5 class="float-start fw-bold text-opacity-75">Struktural</h5>
-                      <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
-                    </div>
-                    <hr class="border">
-                    <div class="" style="min-height: 160px;">
-                      <p>Memberikan gambaran struktur organisasi, susunan kepengurusan, dan pengelolaan program agar berjalan lancar.</p>
-                    </div>
-                    <div class="clearfix">
-                      <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                      <div class="float-end px-3">
-                        <i class="fa-solid fa-arrow-right text-secondary"></i>
+                    <div class="p-4 box-card text-dark rounded-3">
+                      <div class="clearfix">
+                        <h5 class="float-start fw-bold text-opacity-75">Struktural</h5>
+                        <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
+                      </div>
+                      <hr class="border">
+                      <div class="" style="min-height: 160px;">
+                        <p>Memberikan gambaran struktur organisasi, susunan kepengurusan, dan pengelolaan program agar berjalan lancar.</p>
+                      </div>
+                      <div class="clearfix">
+                        <p class="card-text float-start">
+                          <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                        </p>
+                        <div class="float-end px-3">
+                          <i class="fa-solid fa-arrow-right text-secondary"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
                 </div>
               </div>
               <div class="col-lg-3 mb-4">
                 <div class="" data-aos="fade-right" data-aos-duration="2000">
                   <a href="#" class="link-card">
-                  <div class="p-4 box-card text-dark rounded-3">
-                    <div class="clearfix">
-                      <h5 class="float-start fw-bold text-opacity-75">Program Kerja</h5>
-                      <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
-                    </div>
-                    <hr class="border">
-                    <div class="" style="min-height: 160px;">
-                      <p>Mengeksplorasi program kerja untuk mendukung pengembangan akademik dan non-akademik mahasiswa serta soft skills.</p>
-                    </div>
-                    <div class="clearfix">
-                      <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                      <div class="float-end px-3">
-                        <i class="fa-solid fa-arrow-right text-secondary"></i>
+                    <div class="p-4 box-card text-dark rounded-3">
+                      <div class="clearfix">
+                        <h5 class="float-start fw-bold text-opacity-75">Program Kerja</h5>
+                        <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
+                      </div>
+                      <hr class="border">
+                      <div class="" style="min-height: 160px;">
+                        <p>Mengeksplorasi program kerja untuk mendukung pengembangan akademik dan non-akademik mahasiswa serta soft skills.</p>
+                      </div>
+                      <div class="clearfix">
+                        <p class="card-text float-start">
+                          <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                        </p>
+                        <div class="float-end px-3">
+                          <i class="fa-solid fa-arrow-right text-secondary"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
                 </div>
               </div>
               <div class="col-lg-3 mb-4">
                 <div class="" data-aos="fade-right" data-aos-duration="2400">
                   <a href="#" class="link-card">
-                  <div class="p-4 box-card text-dark rounded-3">
-                    <div class="clearfix">
-                      <h5 class="float-start fw-bold text-opacity-75">Kementrian</h5>
-                      <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
-                    </div>
-                    <hr class="border">
-                    <div class="" style="min-height: 160px;">
-                      <p>Lihat kementerian di BEM ITBA DCC beserta fokus dan tanggung jawab mereka untuk mencapai visi dan misi.</p>
-                    </div>
-                    <div class="clearfix">
-                      <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                      <div class="float-end px-3">
-                        <i class="fa-solid fa-arrow-right text-secondary"></i>
+                    <div class="p-4 box-card text-dark rounded-3">
+                      <div class="clearfix">
+                        <h5 class="float-start fw-bold text-opacity-75">Kementrian</h5>
+                        <div class="float-end p-2 rounded-circle bg-danger m-1"></div>
+                      </div>
+                      <hr class="border">
+                      <div class="" style="min-height: 160px;">
+                        <p>Lihat kementerian di BEM ITBA DCC beserta fokus dan tanggung jawab mereka untuk mencapai visi dan misi.</p>
+                      </div>
+                      <div class="clearfix">
+                        <p class="card-text float-start">
+                          <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                        </p>
+                        <div class="float-end px-3">
+                          <i class="fa-solid fa-arrow-right text-secondary"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-
-          
         </div>
-        
         <div class="mt-5">
           <div class="container">
             <div class="row">
@@ -324,19 +349,27 @@
                 <div class="" data-aos="fade-up" data-aos-duration="1400">
                   <div class="bg-white box-card py-5 px-5 border-bottom border-danger border-5 mb-5 rounded-3">
                     <div class="clearfix">
-                        <h4 class="text-sub m-0 fs-4 lh-sm text-dark float-start">Sambutan</h4>
-                        <div class="float-end">
-                          <div class="p-2 rounded-circle bg-danger m-1"></div>
-                        </div>
+                      <h4 class="text-sub m-0 fs-4 lh-sm text-dark float-start">Sambutan</h4>
+                      <div class="float-end">
+                        <div class="p-2 rounded-circle bg-danger m-1"></div>
+                      </div>
                     </div>
                     <hr class="border">
                     <h4 class="mt-4 mb-4 text-nama">Rico Fadli</h4>
-                    <p class="m-0"><b>Hidup Mahasiswa!</b></p>
-                    <p class="mb-4 m-0"><b>Hidup Rakyat Indonesia!</b></p>
+                    <p class="m-0">
+                      <b>Hidup Mahasiswa!</b>
+                    </p>
+                    <p class="mb-4 m-0">
+                      <b>Hidup Rakyat Indonesia!</b>
+                    </p>
                     <p class="mb-3">BEM Institut Teknologi Bisnis dan Bahasa Dian Cipta Cendikia berkomitmen untuk beradaptasi dengan era digital dan dinamika global. Kami melakukan inovasi di ruang digital agar lebih relevan dengan kebutuhan mahasiswa, mulai dari kanal informasi terpadu hingga ruang pengaduan yang mudah diakses.</p>
                     <p class="mb-4">Kami berharap seluruh mahasiswa memanfaatkan inisiatif ini dengan sebaik-baiknya untuk kemajuan bersama.</p>
-                    <p class="m-0"><b>Rico Fadli</b></p>
-                    <p class="m-0"><b>Ketua BEM ITBA DCC</b></p>
+                    <p class="m-0">
+                      <b>Rico Fadli</b>
+                    </p>
+                    <p class="m-0">
+                      <b>Ketua BEM ITBA DCC</b>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -344,308 +377,321 @@
           </div>
         </div>
         <div class="bg-danger py-5"></div>
-
         <div class="bg-visimisi">
           <div class="content-visimisi">
-              <div class="container">
-                <div class="py-5 px-3 bg-visimisi-dark">
-                  <div class="text-center">
-                    <div class="text">
-                      <center>
-                        <h2 class="text-white text-sub mb-4 text-bg border-visi">Visi & Misi</h2>
-                      </center>
-                    </div>
-                    <p class="text-visi text-white" data-aos="fade-up" data-aos-duration="1000">
-                      Menjadi BEM yang Inovatif, Progresif, dan Berwawasan Global untuk Mewujudkan Mahasiswa Institut Teknologi Bisnis dan Bahasa Dian Cipta Cendikia yang Unggul dan Berdaya Saing.
-                    </p>
-                    <table class="table table-bordered mt-5" data-aos="fade-up" data-aos-duration="1300">
-                      <tr>
-                        <th class="text-white py-3 bg-white bg-opacity-100 align-middle"><i class="fa-solid fa-check text-danger"></i></th>
-                        <td class="text-white py-3 fw-bold align-middle">Mendorong Partisipasi Aktif</td>
-                        <td class="text-white py-3">Memotivasi keterlibatan mahasiswa dalam setiap kegiatan kampus.</td>
-                      </tr>
-                      <tr>
-                        <th class="text-white py-3 bg-white bg-opacity-100 align-middle"><i class="fa-solid fa-check text-danger"></i></th>
-                        <td class="text-white py-3 fw-bold align-middle">Program Kreatif dan Solutif</td>
-                        <td class="text-white py-3">Menginisiasi kegiatan inovatif untuk menjawab tantangan era digital.</td>
-                      </tr>
-                      <tr>
-                        <th class="text-white py-3 bg-white bg-opacity-100 align-middle"><i class="fa-solid fa-check text-danger"></i></td>
-                        <td class="text-white py-3 fw-bold align-middle">Kolaborasi Global</td>
-                        <td class="text-white py-3">Membangun jejaring internasional untuk memperluas wawasan.</td>
-                      </tr>
-                      <tr>
-                        <th class="text-white py-3 bg-white bg-opacity-100 align-middle"><i class="fa-solid fa-check text-danger"></i></th>
-                        <td class="text-white py-3 fw-bold align-middle">Pelayanan Prima</td>
-                        <td class="text-white py-3">Memaksimalkan teknologi untuk pelayanan informasi yang cepat dan transparan.</td>
-                      </tr>
-                      <tr>
-                        <th class="text-white py-3 bg-white bg-opacity-100 align-middle"><i class="fa-solid fa-check text-danger"></i></th>
-                        <td class="text-white py-3 fw-bold align-middle">Integritas dan Etika</td>
-                        <td class="text-white py-3">Membangun karakter kuat dalam setiap langkah.</td>
-                      </tr>
-                    </table>
+            <div class="container">
+              <div class="py-5 px-3 bg-visimisi-dark">
+                <div class="text-center">
+                  <div class="text">
+                    <center>
+                      <h2 class="text-white text-sub mb-4 text-bg border-visi">Visi & Misi</h2>
+                    </center>
                   </div>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content border-0 shadow-sm rounded-3">
-            <!-- <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> -->
-            <div class="modal-body p-0">
-              <div class="px-3 pt-3">
-                <p class="m-0 mb-2 ms-1"><small >Share Link</small></label>
-                <div class="p-2 border rounded-3 bg-light clearfix px-3">
-                  <div class="float-start">
-                    <p class="m-0">https://bem.itba-dcc/0wnf98c93u0xad=&43asd</p>
-                  </div>
-                  <div class="float-end">
-                    <i class="fa-solid fa-link"></i>
-                  </div>
-                </div>
-              </div>
-              <hr class="border">
-              <div class="px-3 pb-3">
-                <div class="link mt-3 d-flex justify-content-center flex-wrap">
-                  <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #25d366;">
-                    <p class="m-0 d-flex align-content-end justify-content-center">
-                      <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
-                    </p>
-                  </a>
-                  <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #BF3775;">
-                    <p class="m-0 d-flex align-content-end justify-content-center">
-                      <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
-                    </p>
-                  </a>
-                  <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #1F1F1F;">
-                    <p class="m-0 d-flex align-content-end justify-content-center">
-                      <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
-                    </p>
-                  </a>
-                  <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #1F7BF2;">
-                    <p class="m-0 d-flex align-content-end justify-content-center">
-                      <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
-                    </p>
-                  </a>
-                  <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #000000;">
-                    <p class="m-0 d-flex align-content-end justify-content-center">
-                      <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
-                    </p>
-                  </a>
-                  <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #CC181E;">
-                    <p class="m-0 d-flex align-content-end justify-content-center">
-                      <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
-                    </p>
-                  </a>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
-        <div class=" text-start clearfix" >
-          <h4 class="text-sub text-danger fs-2 lh-sm mb-3 float-start">Artikel</h4>
-          <div class="btn btn-danger rounded-5 px-4 float-end">Selengkapnya <i class="fa-solid fa-angle-right ms-2 fs-6"></i></div>
-        </div>
-        <div class="py-5">
-          <div class="row">
-            <div class="col-lg-3 link">
-              <div class="" data-aos="fade-right" data-aos-duration="1200">
-                <a href="#">
-                  <div class="card rounded-3 border-0 box-card mb-4">
-                    <div class="position-absolute top-0 start-0">
-                      <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
-                    </div>
-                    <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4"><small>4 Agustus 2024</small></div>
-                    <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-4">
-                      <div class="clearfix">
-                        <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
-                        
-                      </div>
-                      <a href="">
-                        <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
-                        <div class="clearfix">
-                          <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                          <div class="float-end">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                              <i class="fa-solid fa-ellipsis text-secondary"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 link">
-              <div class="" data-aos="fade-right" data-aos-duration="1200">
-                <a href="#">
-                  <div class="card rounded-3 border-0 box-card mb-4">
-                    <div class="position-absolute top-0 start-0">
-                      <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
-                    </div>
-                    <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4"><small>4 Agustus 2024</small></div>
-                    <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-4">
-                      <div class="clearfix">
-                        <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
-                        
-                      </div>
-                      <a href="">
-                        <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
-                        <div class="clearfix">
-                          <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                          <div class="float-end">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                              <i class="fa-solid fa-ellipsis text-secondary"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 link">
-              <div class="" data-aos="fade-right" data-aos-duration="1200">
-                <a href="#">
-                  <div class="card rounded-3 border-0 box-card mb-4">
-                    <div class="position-absolute top-0 start-0">
-                      <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
-                    </div>
-                    <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4"><small>4 Agustus 2024</small></div>
-                    <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-4">
-                      <div class="clearfix">
-                        <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
-                        
-                      </div>
-                      <a href="">
-                        <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
-                        <div class="clearfix">
-                          <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                          <div class="float-end">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                              <i class="fa-solid fa-ellipsis text-secondary"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 link">
-              <div class="" data-aos="fade-right" data-aos-duration="1200">
-                <a href="#">
-                  <div class="card rounded-3 border-0 box-card mb-4">
-                    <div class="position-absolute top-0 start-0">
-                      <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
-                    </div>
-                    <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4"><small>4 Agustus 2024</small></div>
-                    <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-4">
-                      <div class="clearfix">
-                        <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
-                        
-                      </div>
-                      <a href="">
-                        <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
-                        <div class="clearfix">
-                          <p class="card-text float-start"><small class="text-body-secondary">Lihat Lebih Detail..</small></p>
-                          <div class="float-end">
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                              <i class="fa-solid fa-ellipsis text-secondary"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="py-5 px-5 bg-white text-center box-card" style="border-radius: 10px 10px 0 0;" data-aos="fade-up" data-aos-duration="1400">
-          
-          <div class="" style="margin-bottom: 5%;">
-            <h4 class="text-sub text-danger fs-2 lh-sm mb-3 text-center">Kementerian BEM ITBA DCC</h4>
-            <div class="clearfix mb-3">
-              <center>
-                <P class="fs-6 float-start bg-light p-2 border rounded-3" >BEM ITBA DCC memiliki 9 kementerian yang bekerja secara sinergis untuk menjalankan fungsi dan tanggung jawabnya dalam mendukung aktivitas mahasiswa</P>
-              </center>
-            </div>
-            <div class="row text-center">
-              <div class="col-lg-4">
-                <div class="py-3 px-3 border rounded-3 mb-3 bg-img-mentri">
-                  <img src="assets/img/logo.png" class="bg-white rounded-circle" height="88px" alt="">
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri4">
-                  <p class="m-0 text-white fw-bold">Kementerian Agama</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri2">
-                  <p class="m-0 text-white fw-bold">Kementerian Luar Negeri</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri3">
-                  <p class="m-0 text-white fw-bold">Kementerian Pendidikan & Kebudayaan</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri7">
-                  <p class="m-0 text-white fw-bold">Kementerian Pemuda dan Olahraga</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri6">
-                  <p class="m-0 text-white fw-bold">Kementerian Komunikasi dan Informasi</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri5">
-                  <p class="m-0 text-white fw-bold">Kementerian Sosial</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri8">
-                  <p class="m-0 text-white fw-bold">Kementerian Ekonomi</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri9">
-                  <p class="m-0 text-white fw-bold">Kementerian Hukum</p><span id="gallery"></span>
+                  <p class="text-visi text-white" data-aos="fade-up" data-aos-duration="1000"> Menjadi BEM yang Inovatif, Progresif, dan Berwawasan Global untuk Mewujudkan Mahasiswa Institut Teknologi Bisnis dan Bahasa Dian Cipta Cendikia yang Unggul dan Berdaya Saing. </p>
+                  <table class="table table-bordered mt-5" data-aos="fade-up" data-aos-duration="1300">
+                    <tr>
+                      <th class="text-white py-3 bg-white bg-opacity-100 align-middle">
+                        <i class="fa-solid fa-check text-danger"></i>
+                      </th>
+                      <td class="text-white py-3 fw-bold align-middle">Mendorong Partisipasi Aktif</td>
+                      <td class="text-white py-3">Memotivasi keterlibatan mahasiswa dalam setiap kegiatan kampus.</td>
+                    </tr>
+                    <tr>
+                      <th class="text-white py-3 bg-white bg-opacity-100 align-middle">
+                        <i class="fa-solid fa-check text-danger"></i>
+                      </th>
+                      <td class="text-white py-3 fw-bold align-middle">Program Kreatif dan Solutif</td>
+                      <td class="text-white py-3">Menginisiasi kegiatan inovatif untuk menjawab tantangan era digital.</td>
+                    </tr>
+                    <tr>
+                      <th class="text-white py-3 bg-white bg-opacity-100 align-middle">
+                        <i class="fa-solid fa-check text-danger"></i>
+                        </td>
+                      <td class="text-white py-3 fw-bold align-middle">Kolaborasi Global</td>
+                      <td class="text-white py-3">Membangun jejaring internasional untuk memperluas wawasan.</td>
+                    </tr>
+                    <tr>
+                      <th class="text-white py-3 bg-white bg-opacity-100 align-middle">
+                        <i class="fa-solid fa-check text-danger"></i>
+                      </th>
+                      <td class="text-white py-3 fw-bold align-middle">Pelayanan Prima</td>
+                      <td class="text-white py-3">Memaksimalkan teknologi untuk pelayanan informasi yang cepat dan transparan.</td>
+                    </tr>
+                    <tr>
+                      <th class="text-white py-3 bg-white bg-opacity-100 align-middle">
+                        <i class="fa-solid fa-check text-danger"></i>
+                      </th>
+                      <td class="text-white py-3 fw-bold align-middle">Integritas dan Etika</td>
+                      <td class="text-white py-3">Membangun karakter kuat dalam setiap langkah.</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="bg-visimisi1">
-        <div class="content-visimisi1" >
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-sm rounded-3">
+              <div class="modal-body p-0">
+                <div class="px-3 pt-3">
+                  <p class="m-0 mb-2 ms-1">
+                    <small>Share Link</small>
+                    </label>
+                  <div class="p-2 border rounded-3 bg-light clearfix px-3">
+                    <div class="float-start">
+                      <p class="m-0">https://bem.itba-dcc/0wnf98c93u0xad=&43asd</p>
+                    </div>
+                    <div class="float-end">
+                      <i class="fa-solid fa-link"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr class="border">
+                <div class="px-3 pb-3">
+                  <div class="link mt-3 d-flex justify-content-center flex-wrap">
+                    <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #25d366;">
+                      <p class="m-0 d-flex align-content-end justify-content-center">
+                        <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
+                      </p>
+                    </a>
+                    <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #BF3775;">
+                      <p class="m-0 d-flex align-content-end justify-content-center">
+                        <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
+                      </p>
+                    </a>
+                    <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #1F1F1F;">
+                      <p class="m-0 d-flex align-content-end justify-content-center">
+                        <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
+                      </p>
+                    </a>
+                    <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #1F7BF2;">
+                      <p class="m-0 d-flex align-content-end justify-content-center">
+                        <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
+                      </p>
+                    </a>
+                    <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #000000;">
+                      <p class="m-0 d-flex align-content-end justify-content-center">
+                        <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
+                      </p>
+                    </a>
+                    <a class="btn btn-outline-secondary border-light text-white border-opacity-25 mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%; background-color: #CC181E;">
+                      <p class="m-0 d-flex align-content-end justify-content-center">
+                        <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+          <div class=" text-start clearfix">
+            <h4 class="text-sub text-danger fs-2 lh-sm mb-3 float-start">Artikel</h4>
+            <a href="artikel.html" class="btn btn-danger rounded-5 px-4 float-end">Selengkapnya <i class="fa-solid fa-angle-right ms-2 fs-6"></i>
+            </a>
+          </div>
+          <div class="py-5">
+            <div class="row">
+              <div class="col-lg-3 link">
+                <div class="" data-aos="fade-right" data-aos-duration="1200">
+                  <a href="#">
+                    <div class="card rounded-3 border-0 box-card mb-4">
+                      <div class="position-absolute top-0 start-0">
+                        <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
+                      </div>
+                      <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4">
+                        <small>4 Agustus 2024</small>
+                      </div>
+                      <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-4">
+                        <div class="clearfix">
+                          <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
+                        </div>
+                        <a href="">
+                          <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
+                          <div class="clearfix">
+                            <p class="card-text float-start">
+                              <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                            </p>
+                            <div class="float-end">
+                              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <i class="fa-solid fa-ellipsis text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 link">
+                <div class="" data-aos="fade-right" data-aos-duration="1200">
+                  <a href="#">
+                    <div class="card rounded-3 border-0 box-card mb-4">
+                      <div class="position-absolute top-0 start-0">
+                        <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
+                      </div>
+                      <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4">
+                        <small>4 Agustus 2024</small>
+                      </div>
+                      <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-4">
+                        <div class="clearfix">
+                          <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
+                        </div>
+                        <a href="">
+                          <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
+                          <div class="clearfix">
+                            <p class="card-text float-start">
+                              <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                            </p>
+                            <div class="float-end">
+                              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <i class="fa-solid fa-ellipsis text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 link">
+                <div class="" data-aos="fade-right" data-aos-duration="1200">
+                  <a href="#">
+                    <div class="card rounded-3 border-0 box-card mb-4">
+                      <div class="position-absolute top-0 start-0">
+                        <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
+                      </div>
+                      <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4">
+                        <small>4 Agustus 2024</small>
+                      </div>
+                      <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-4">
+                        <div class="clearfix">
+                          <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
+                        </div>
+                        <a href="">
+                          <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
+                          <div class="clearfix">
+                            <p class="card-text float-start">
+                              <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                            </p>
+                            <div class="float-end">
+                              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <i class="fa-solid fa-ellipsis text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 link">
+                <div class="" data-aos="fade-right" data-aos-duration="1200">
+                  <a href="#">
+                    <div class="card rounded-3 border-0 box-card mb-4">
+                      <div class="position-absolute top-0 start-0">
+                        <img class="img-pita" src="assets/img/pita2.png" height="80px" alt="">
+                      </div>
+                      <div class="position-absolute top-0 end-0 fw-bold bg-white p-1 mt-3 text-danger text-tgl px-4">
+                        <small>4 Agustus 2024</small>
+                      </div>
+                      <img src="assets/img/artikel1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-4">
+                        <div class="clearfix">
+                          <h5 class="fw-bold mb-3 float-start text-secondary">Artikel</h5>
+                        </div>
+                        <a href="">
+                          <p class="mb-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti exercitationem maxime architecto sed et.</p>
+                          <div class="clearfix">
+                            <p class="card-text float-start">
+                              <small class="text-body-secondary">Lihat Lebih Detail..</small>
+                            </p>
+                            <div class="float-end">
+                              <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                <i class="fa-solid fa-ellipsis text-secondary"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="py-5 px-5 bg-white text-center box-card" style="border-radius: 10px 10px 0 0;" data-aos="fade-up" data-aos-duration="1400">
+            <div class="" style="margin-bottom: 5%;">
+              <h4 class="text-sub text-danger fs-2 lh-sm mb-3 text-center">Kementerian BEM ITBA DCC</h4>
+              <div class="clearfix mb-3">
+                <center>
+                  <P class="fs-6 float-start bg-light p-2 border rounded-3">BEM ITBA DCC memiliki 9 kementerian yang bekerja secara sinergis untuk menjalankan fungsi dan tanggung jawabnya dalam mendukung aktivitas mahasiswa</P>
+                </center>
+              </div>
+              <div class="row text-center">
+                <div class="col-lg-4">
+                  <div class="py-3 px-3 border rounded-3 mb-3 bg-img-mentri">
+                    <img src="assets/img/logo.png" class="bg-white rounded-circle" height="88px" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri4">
+                    <p class="m-0 text-white fw-bold">Kementerian Agama</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri2">
+                    <p class="m-0 text-white fw-bold">Kementerian Luar Negeri</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri3">
+                    <p class="m-0 text-white fw-bold">Kementerian Pendidikan & Kebudayaan</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri7">
+                    <p class="m-0 text-white fw-bold">Kementerian Pemuda dan Olahraga</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri6">
+                    <p class="m-0 text-white fw-bold">Kementerian Komunikasi dan Informasi</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri5">
+                    <p class="m-0 text-white fw-bold">Kementerian Sosial</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri8">
+                    <p class="m-0 text-white fw-bold">Kementerian Ekonomi</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="py-5 px-3 border rounded-3 mb-3 bg-img-mentri9">
+                    <p class="m-0 text-white fw-bold">Kementerian Hukum</p>
+                    <span id="gallery"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-visimisi1">
+          <div class="content-visimisi1">
             <div class="container">
               <div class="py-5 px-3 bg-visimisi-dark">
                 <div class="text-center">
@@ -716,87 +762,78 @@
                     </div>
                   </div>
                 </div>
-                
                 <div class="mt-3 text-center">
-                  <a href="" class="btn btn-danger fw-medium px-5 rounded-5">Lihat Lainnya</a>
+                  <a href="gallery.html" class="btn btn-danger fw-medium px-5 rounded-5">Lihat Lainnya</a>
                 </div>
-                
               </div>
             </div>
+          </div>
         </div>
-      </div>
-
-      <div class="container">
-        <div class="" style="margin-top: 100px; margin-bottom: 100px;">
-          <h3 class="text-center mb-5 px-3 text-secondary fw-bold">Tonton video terbaru kami dan temukan informasi menarik! <br> Klik 'play' dan bagikan dengan teman Anda!
-
-          </h3>
-          <div class="mb-5">
+        <div class="container">
+          <div class="" style="margin-top: 100px; margin-bottom: 100px;">
+            <h3 class="text-center mb-5 px-3 text-secondary fw-bold">Tonton video terbaru kami dan temukan informasi menarik! <br> Klik 'play' dan bagikan dengan teman Anda! </h3>
+            <div class="mb-5">
               <center>
-                  <div class="px-3">
-                      <div class="" data-aos="zoom-in-up" data-aos-duration="1300">
-                          <div class="card m-0 rounded-4 shadow" style="max-width: 800px;">
-                              <div class="ratio ratio-16x9 ">
-                                  <iframe class="rounded-4 shadow" src="https://www.youtube.com/embed/JmUvfp7ME2g?si=UrpMGy-UYCphx_cc" title="YouTube video" allowfullscreen></iframe>
-                              </div>
-                          </div>
+                <div class="px-3">
+                  <div class="" data-aos="zoom-in-up" data-aos-duration="1300">
+                    <div class="card m-0 rounded-4 shadow" style="max-width: 800px;">
+                      <div class="ratio ratio-16x9 ">
+                        <iframe class="rounded-4 shadow" src="https://www.youtube.com/embed/JmUvfp7ME2g?si=UrpMGy-UYCphx_cc" title="YouTube video" allowfullscreen></iframe>
                       </div>
+                    </div>
                   </div>
+                </div>
               </center>
+            </div>
           </div>
         </div>
       </div>
-    
-      </div>
     </div>
-
-
-
     <footer data-aos="fade-up" data-aos-duration="1200">
       <div class="bg-light">
         <div class="container pt-5 pb-3">
           <div class="text-center">
             <h4 class="text-uppercase text-danger mb-4 text-sub">bem itba dcc</h4>
-              <div class="link mt-3 d-flex justify-content-center flex-wrap">
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-solid fa-envelope fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
-                <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
-                  <p class="m-0 d-flex align-content-end justify-content-center">
-                    <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
-                  </p>
-                </a>
+            <div class="link mt-3 d-flex justify-content-center flex-wrap">
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-whatsapp fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-solid fa-envelope fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-instagram fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-x-twitter fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-facebook fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-tiktok fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
+              <a class="btn btn-outline-secondary border-secondary border-opacity-25 btn-footer mx-2 mb-2" style="height: 45px; width: 45px; border-radius: 50%;">
+                <p class="m-0 d-flex align-content-end justify-content-center">
+                  <i class="fa-brands fa-youtube fs-5" style="margin-top: 28%;"></i>
+                </p>
+              </a>
             </div>
             <hr class="border">
             <div class="mt-3 mb-4">
-              <p>BEM ITBA DCC adalah lembaga eksekutif mahasiswa tertinggi di ITBA DCC, <br> di bawah pengawasan Legislatif Mahasiswa.</p>
+              <p>BEM ITBA DCC adalah lembaga eksekutif mahasiswa tertinggi di ITBA DCC, <br> di bawah pengawasan Legislatif Mahasiswa. </p>
             </div>
             <hr class="border">
             <div class="mt-4">
@@ -873,20 +910,16 @@
         </div>
       </div>
     </footer>
-    
     <!-- Animasi AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
     <!-- Typed -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
     <!-- Script.js -->
     <script src="assets/js/script.js"></script>
-
     <!-- Bootsrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
